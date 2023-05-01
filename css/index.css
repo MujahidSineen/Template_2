@@ -1,0 +1,165 @@
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root {
+	--mcolor: rgb(0 254 203);
+	--tcolor: rgb(255, 255, 255);
+}
+.container {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.692);
+}
+header {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 95vw;
+	z-index: 1;
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.uppernav ul {
+	margin: 10px 0px;
+	padding: 5px 0px;
+}
+.uppernav ul li {
+	list-style: none;
+	display: inline;
+}
+
+.uppernav ul li a {
+	color: var(--mcolor);
+	text-decoration: none;
+	font-weight: 200;
+	transition: 0.3s;
+}
+
+.uppernav ul li a:hover {
+	color: var(--tcolor);
+	padding-right: 3px;
+}
+
+.contain {
+	background-image: url(image/pexels-eberhard-grossgasteiger-1062249.jpg);
+	background-size: cover;
+	padding: 0;
+	background-color: black;
+	height: 100%;
+	position: relative;
+}
+
+.landingarticle {
+	display: block;
+}
+
+article {
+	display: none;
+}
+article p {
+	color: #fff;
+    font-size: 24px;
+    text-align: center;
+    padding: 0 0 30 0;
+}
+article ul {
+	color: #fff;
+    list-style: none;
+    font-size: 1.7vw;
+	padding: 0;
+	margin-bottom: 1vw;
+}
+article ul li {
+	margin: 10px 0px;
+    text-align: center;
+}
+.landingheader {
+	color: white;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    padding: 5% 0%;
+	text-transform: uppercase;
+}
+
+@media (max-width: 360px) {
+    .landingheader {
+
+        font-size: 70px;
+        
+        }
+            .uppernav ul {
+                font-size: 8px;
+            }
+}
+article table {
+	color: #fff;
+    margin: auto;
+    font-size: 20px;
+}
+article table tr {
+	border-left: 3px solid;
+    border-right: 3px solid;
+}
+article table td {
+	padding: 26px;
+    text-align: center;
+    border-radius: 10px;
+}
+.overlay .container button {
+	display: block;
+    margin: 30px auto 0;
+    padding: 8px 20px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: var(--mcolor);
+    font-size: 1.7vw;
+    text-transform: uppercase;
+	border-color: transparent;
+}
+
+.lowernav ul {
+	margin: 10px 0px;
+	padding: 5px 0px;
+}
+.lowernav ul li {
+	list-style: none;
+	display: inline;
+}
+
+.lowernav .social-icons {
+	color: var(--tcolor);
+}
+.lowernav .social-icons i {
+	padding: 10px;
+    font-size: 1.8vw;
+    margin: 25px 0;
+	cursor: pointer;
+}
+footer {
+	text-align: center;
+	font-size: 15px;
+	padding-top: 10px;
+}
+
+footer p {
+	color: var(--mcolor);
+	font-size: 1.7vw;
+}
