@@ -58,7 +58,7 @@ header {
 }
 
 .contain {
-	background-image: url(image/pexels-eberhard-grossgasteiger-1062249.jpg);
+	background-image: url(../image/pexels-eberhard-grossgasteiger-1062249.jpg);
 	background-size: cover;
 	padding: 0;
 	background-color: black;
